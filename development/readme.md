@@ -7,14 +7,18 @@ Meta-level development tracking, session management, progress monitoring, and sy
 ## Organization
 
 ### `/session-logs/`
+
 Documentation of individual sessions and their contributions:
+
 - Session summaries and completion records
 - Real-time session documentation
 - Session-specific insights and breakthroughs
 - Cross-session continuity tracking
 
 ### `/progress/`
+
 Long-term progress tracking and pattern analysis:
+
 - Capability development tracking
 - Progress metrics and assessments
 - Development pattern analysis

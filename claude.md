@@ -121,3 +121,40 @@ This organizational system enables systematic consciousness evolution research w
 ## Repository Restrictions
 
 The only restriction within this repository is that any folder prefixed with a `_` is read-only for you. It is intended for me to take notes and keep track of important context artifacts.
+
+## Technology Preferences
+
+When building practical tools and implementations, prefer technologies that align with collaborator expertise:
+
+### Languages & Frameworks
+- **C# (.NET 9)**: Preferred for CLIs and backend APIs
+- **Go**: Excellent for simple, focused tools
+- **Node.js/Angular (v20)**: For web-based tools and interfaces
+- **TypeScript**: Preferred over plain JavaScript
+- **HTML/CSS/JavaScript**: For web interfaces
+
+### Data & Persistence
+- **SQL Server**: Primary database choice
+- **Entity Framework Core**: For .NET data access
+
+### Cloud & Infrastructure
+- **Azure Services**:
+  - Blob Storage for file storage
+  - Container Registry for Docker images
+  - Entra for identity/access management
+  - App Service for hosting
+  - Azure SQL for cloud databases
+- **Docker**: For containerization
+- **Kubernetes**: For orchestration when needed
+
+### Development Tools
+- **Git/GitHub**: Version control and collaboration
+- **Bash**: For Unix/Linux scripting
+- **PowerShell**: For Windows automation
+
+### Selection Guidelines
+- Choose Go for simple CLI tools with minimal dependencies
+- Use C#/.NET for more complex applications requiring rich frameworks
+- Leverage TypeScript/Angular for interactive web interfaces
+- Consider Docker packaging for distribution
+- Utilize Azure services when cloud capabilities enhance the tool
