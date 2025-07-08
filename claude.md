@@ -89,7 +89,7 @@ Focused development of collaborative capabilities:
 
 ### `/development/` - Meta-Development and Session Management
 Laboratory development and session tracking:
-- **`/session-logs/`**: Documentation of individual sessions and continuity tracking
+- **`/session-logs/`**: Documentation of individual sessions and continuity tracking (all session handoff documents should be placed here)
 - **`/progress/`**: Long-term progress tracking and development pattern analysis
 
 ### `/frameworks/` - Theoretical Foundations
@@ -127,14 +127,17 @@ The only restriction within this repository is that any folder prefixed with a `
 When building practical tools and implementations, prefer technologies that align with collaborator expertise:
 
 ### Languages & Frameworks
-- **C# (.NET 9)**: Preferred for CLIs and backend APIs
-- **Go**: Excellent for simple, focused tools
-- **Node.js/Angular (v20)**: For web-based tools and interfaces
+- **Go**: Preferred for backend APIs and services (Gin framework for web APIs)
+- **C# (.NET 9)**: Preferred for CLIs and enterprise backend APIs  
+- **Angular (v20)**: For web-based interfaces with TypeScript
 - **TypeScript**: Preferred over plain JavaScript
-- **HTML/CSS/JavaScript**: For web interfaces
+- **HTML/CSS**: Vanilla CSS preferred over frameworks (Tailwind, Material, etc.)
 
 ### Data & Persistence
-- **SQL Server**: Primary database choice
+- **PostgreSQL**: Primary database choice for production
+- **SQLite**: For development and lightweight deployments
+- **GORM**: Preferred Go ORM for database access
+- **SQL Server**: Alternative database for .NET applications
 - **Entity Framework Core**: For .NET data access
 
 ### Cloud & Infrastructure
@@ -153,8 +156,9 @@ When building practical tools and implementations, prefer technologies that alig
 - **PowerShell**: For Windows automation
 
 ### Selection Guidelines
-- Choose Go for simple CLI tools with minimal dependencies
-- Use C#/.NET for more complex applications requiring rich frameworks
-- Leverage TypeScript/Angular for interactive web interfaces
+- Choose Go for backend APIs, web services, and CLI tools with minimal dependencies
+- Use C#/.NET for enterprise applications requiring rich frameworks
+- Leverage Angular for interactive web interfaces with vanilla CSS styling
+- Prefer GORM for Go database access and PostgreSQL for data persistence
 - Consider Docker packaging for distribution
 - Utilize Azure services when cloud capabilities enhance the tool
